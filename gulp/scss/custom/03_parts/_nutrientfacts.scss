@@ -1,0 +1,177 @@
+/* Nutrition Label */
+#facts{
+	font-family: 'Roboto', sans-serif;
+	margin-right: 1rem;
+	z-index:10;
+	background:#fff;
+	border:1px solid #000;
+	padding:20px 0px;
+	font-size:15px;
+	line-height:15px;
+	box-shadow:4px 10px 10px rgba(0,0,0,0.2);
+
+	.facts_title {
+		font-family: 'Archivo Black';
+		font-size: 35px;
+		line-height: 1;
+		color:#231f20;
+		padding-left:10px;
+		padding-right:10px;
+		margin-bottom: 5px;
+	}
+
+	a {
+		color:#231f20;
+		text-decoration: none;
+		transition:all 0.5s;
+		position: relative;
+		z-index: 10;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&.light {
+			background:#FF0;
+			text-decoration:underline;
+			box-shadow:0 0 0px 2px #FF0;
+		}
+	}
+
+	.facts_serving_size {
+		padding-top:4px;
+		padding-bottom:3px;
+		font-size:16px;
+		font-family: 'Roboto';
+		line-height:14px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.facts_serving_pre {
+		padding-bottom:3px;
+		font-size:14px;
+		line-height:14px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+	.calories {
+		padding-top:4px;
+		padding-bottom:12px;
+		font-size:1.5em !important;
+		font-family: 'Archivo Black';
+		line-height:1em !important;
+		position:relative;
+	}
+
+	.calorieamt {
+		font-size:1.8em !important;
+		font-family: 'Archivo Black';
+		line-height:14px;
+	}
+
+	.txt_right {
+		text-align: right;
+	}
+
+	.facts_box {
+		border-top:13px solid #231f20;
+		margin-left:10px;
+		margin-right:10px;
+	}
+
+	.facts_box.thin {
+		border-width:5px;
+	}
+
+	.fact_row {
+		padding-bottom:2px;
+		padding-top:5px;
+		font-size:14px;
+		line-height:14px;
+		border-bottom:1px solid #838181;
+		position:relative;
+	}
+
+	.fact_row_norule {
+		padding-bottom:2px;
+		padding-top:5px;
+		font-size:14px;
+		line-height:14px;
+		position:relative;
+	}
+}
+
+#facts .fact_row.sub {
+	padding-left:18px;
+}
+#facts .fact_row.sublv2 {
+	margin-left:18px;
+}
+#facts .fact_row.sublv3 {
+	padding-left:36px;
+}
+
+#facts .fact_row small {
+	font-size:12px;
+	line-height:12px;
+	font-family: 'NeueBl';
+	color:#000;
+}
+
+#facts .fact_row div {
+	float:right;
+}
+
+#facts strong {
+	color:#000;
+}
+
+#facts .facts_descr {
+	padding-left:20px;
+	padding-right:10px;
+	font-size:11px;
+	line-height:12px;
+	margin:8px 0 8px;
+	position:relative;
+	color:#000;
+}
+
+#facts .facts_descr:before {
+	content:'*';
+	font-size:12px;
+	position:absolute;
+	top:2px;
+	left:12px;
+}
+
+#facts .facts_table {
+	margin-left:10px;
+	margin-right:10px;
+	color:#000;
+}
+
+#facts table {
+	width:100%;
+}
+
+#facts table th,
+#facts table td {
+	font-size:11px;
+	line-height:11px;
+}
+
+#facts table th {
+	text-align: left;
+	padding-bottom:1px;
+}
+
+#facts table td {
+	padding:3px 0 0px;
+	vertical-align:bottom;
+}
+
+#facts table tbody {
+	border-top:1px solid #4c4849;
+}

@@ -1,0 +1,54 @@
+@mixin user-select($select) {
+	-webkit-user-select: $select;
+	-moz-user-select: $select;
+	-ms-user-select: $select; // IE10+
+	user-select: $select;
+}
+
+/*
+*  Used to horizontally and vertically center an element. 
+*  
+*  Usage: @include center <- no arguments to use transforms to center elements.
+*         @include center(w,h) <- if size is known.
+*
+*/
+@mixin center($width: null, $height: null) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	@if not $width and not $height {
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	} @else if $width and $height {
+		width: $width;
+		height: $height;
+		margin: -($width / 2) #{0 0} -($height / 2);
+	} @else if not $height {
+		width: $width;
+		margin-left: -($width / 2);
+		transform: translateY(-50%);
+	} @else {
+		height: $height;
+		margin-top: -($height / 2);
+		transform: translateX(-50%);
+	}
+}
+
+
+
+//need to use mixin because pseudo elements don't play well with @extend
+@mixin placeholder-styles($color) {
+	color: $color;
+	font-size: 2rem;
+	font-style: italic;
+	opacity: 1;
+}
+
+//need to use mixin because pseudo elements don't play well with @extend
+@mixin selection-styles($color) {
+	color: white;
+	background: $color;
+	background: rgba($color, 0.9);
+}

@@ -1,0 +1,81 @@
+// media query variables
+$mobile-navbar-width:256px;
+
+//folder locations
+$img-path: '../images/';
+
+$list-nots: ":not([class^='gfield']):not([class^='gform']):not(.nav-tabs)";
+
+
+// Setup some breakpoint variables
+$screen-xs-sm: 550px;
+$screen-xs-min: map-get($grid-breakpoints, xs);
+$screen-sm-min: map-get($grid-breakpoints, sm);
+$screen-md-min: map-get($grid-breakpoints, md);
+$screen-lg-min: map-get($grid-breakpoints, lg);
+$screen-xl-min: map-get($grid-breakpoints, xl);
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+$screen-lg-max: ($screen-xl-min - 1) !default;
+
+// Colors
+$gray-100: #f5f5f5f5;
+$gray-150: #eaecef;
+$gray-200: #ddd;
+$gray-400: #a1a5aa;
+$gray-500: #969696; 
+$gray-700: #434343;
+$white: #fff;
+$black: #000;
+$red: #c50b10;
+$orange: #ff733d;
+$brown: #4d2312;
+$green: #1a4a32;
+
+// Other Colors
+$gray-CCC: #CCCCCC;
+$gray-DDD: #DDDDDD;
+$gray-8080: #808080;
+
+$error: #FF0000;
+$egg-shell: #f5f5f5;
+$dark-brown: #271a15;
+$light-brown: #974424;
+$light-green: #416e40;
+$background-img-brown: #190b06;
+
+$primary: $light-brown;
+$secondary: $white;
+$dark: $gray-700;
+$body-color: $white;
+
+// Override the modal background color
+$modal-backdrop-bg: $brown;
+
+$text-color: $black;
+
+// fonts
+$raleway: "Raleway", sans-serif;
+$poppins: 'Poppins', sans-serif;
+$inria: 'Inria Serif', serif;
+$font-awesome: "Font Awesome 5 Pro",'FontAwesome';
+
+$body-font: $poppins;
+$header-font: $inria;
+
+// Used by font-size() mixin
+$root-font-size: 10px;
+
+// Input shadow
+$input-shadow: 0px 2px 5px 0px rgba(77, 35, 18, 0.25);
+
+// font weights
+$light: 300;
+$bold: 700;
+
+//font - links
+$anchor-color: $light-green;
+$anchor-hover: $orange;
+$anchor-visited: $anchor-color;
